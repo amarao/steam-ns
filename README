@@ -1,0 +1,13 @@
+Set of scripts and files to make steam running as separate user
+without root-access at any moment.
+
+I've done manually steam.deb unpacking and install all required library
+(see steam_demand and steam_libs).
+
+steam_offline run same steam without internet access. It heavily relies on
+'offlined' snapshot on ~steam folder (I do it with btrfs, not included)
+
+Use at your own risk. Please note, that pulseaudio and xhost settings poses
+significant security risks.
+
+Licence: Public Domain, GPL, BSD n-cause at your choice.
