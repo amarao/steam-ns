@@ -17,7 +17,7 @@ sudo ip net exec steam ip link set up dev tap99
 sudo ip net exec steam ip link set mtu 1452 dev tap99
 sudo ip net exec steam ip a a 100.99.64.2/24 dev tap99
 sudo ip net exec steam ip route add default via 100.99.64.1
-
+sudo mkdir -p /etc/netns/steam
 echo 'nameserver 8.8.8.8' |sudo tee /etc/netns/steam/resolv.conf >/dev/null
 #sudo ip net exec steam /bin/bash
 #sudo ip net exec steam login -f steam
